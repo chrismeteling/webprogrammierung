@@ -1,0 +1,22 @@
+header { color: white }
+header { background-color: #da1006;
+        text-align: center;
+        margin: 0px;
+        padding: 20px}
+body {
+        background-image: url("/test_webprogrammierung/Media/Images/index.jpg");
+}
+@media (min-width: 400px) {
+        header {background-color: yellow;}
+}
+@media (min-width: 500px) {
+        body {
+                background-image: url("/test_webprogrammierung/Media/Images/index.jpg");
+        }
+}
+@media (min-width: 700px) {
+        header {background-color: pink;}
+}
+p {color: green}
+body{background-color: aqua}
+span {text-align:center}

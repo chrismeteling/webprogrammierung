@@ -1,0 +1,62 @@
+ul.hnavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    /* below is for fixed bar at top*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    /*below is for fixed bar at bottom*/
+    /*
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+     */
+}
+
+li.hnavbar {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+
+li a.hnavbar {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+/* nach überlagerung von Klassen fragen*/
+.active { /* die classe active für das listen element auswählen, auf welcher seite wir sin, bei li , nicht ad.*/
+    background-color: #4CAF50;
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+div{ /*in div kommt dann der text als inline element rein.*/
+    padding:20px;
+    background-color:#1abc9c;
+
+    margin-top:30px;
+    height:1500px;
+
+    /* fixed bottom bar
+    padding:20px;
+    background-color:#1abc9c;
+    height:1500px
+    */
+}
