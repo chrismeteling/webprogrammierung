@@ -1,0 +1,9 @@
+body{
+    background-color: lightblue;
+}
+div{
+    margin-left: 100px;
+    border-top: dotted;
+    border-top-color: red;
+    border-top-left-radius: 8px;
+}
