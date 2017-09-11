@@ -1,5 +1,8 @@
 Command zur Ausführung: 
-docker build github.com/chrismeteling/webprogrammierung/Vorlesung_WebProgrammierung/aufgabe1 -t nodejs_aufgabe1 
-docker run -p 8080:80 -d nodejs_aufgabe1 
+docker build https://github.com/chrismeteling/webprogrammierung.git#master:Vorlesung_WebProgrammierung/Aufgabe1 -t nodejs_aufgabe1 -f deployment/Dockerfile
 
-Mach in jede Aufgabe das Dockerfile und die anderen json und so hier.
+docker run -p 80:8080 -d nodejs_aufgabe1 
+
+
+Mach in jede Aufgabe ein Deployment Ordner wo alle Files fürs Deployment liegen (Dockerfile, server.js, package.json).
+
