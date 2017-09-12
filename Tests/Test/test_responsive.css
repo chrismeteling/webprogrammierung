@@ -1,0 +1,51 @@
+.navbar-top {
+    background-color: #333;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    margin-left: -10px;
+    height:70px;
+}
+.welcome{
+
+    align:center;
+    text-align: center;
+    font-weight: 700;
+    font-size:3em;
+    color: #31b0d5;
+}
+.page {
+    margin-top: 75px;
+}
+.sidebar{
+
+    flow:left;
+    max-width: 200px;
+    margin-right: 0px;
+    border-right: 0px;
+}
+
+.sidebar {
+    align-content: center;
+    color:white;
+}
+.side{
+    margin-right:32px;
+    margin-left: -10px;
+    background-color:lightgrey;
+}
+.side:hover{
+    background-color: grey;
+}
+
+.content {overflow-x:visible;
+    background-color: lightpink;
+
+}
+
+@media screen and (max-width: 500px){
+.goaway{
+    display: none;
+
+}
+}
