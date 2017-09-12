@@ -4,7 +4,13 @@ Wenn es mehr Werte gibt:
 
 Um Einstellungen von Parent zu entfernen  
 **value: none**
+### Responsive Elements
+Scroll Bar appears, if Screen is smaller than the element.
+Dafür packe das ganze in einen `<div>` container mit `overflow-x:auto` 
 
+    <div style="overflow-x:auto;">
+        <ELEMENT STUFF>  </ELEMENT STUFF>
+    </div>    
 ## Content
 #### Tables
 **table is the whole box**   
@@ -13,6 +19,11 @@ Um Einstellungen von Parent zu entfernen
 **use tr:hover to enable hover support**  
 
     border-collapse; collapse //make the borders smooth
+    
+Jede zweite Zeile eine andere Farbe:
+
+    tr:nth-child(even){background-color: #f2f2f2}
+[Fancy Table](https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy)
 #### Lists
 **ul the box of whole list***  
 **ul li each element**  //use this to make different colours
@@ -97,3 +108,22 @@ Benutzen, wenn man Umrandung will.
     background-attachment: fixed; //beim Scrollen bleibt bild da
 ####Text anpassen
     margin-right: 200px //nach rechts ist 200 px platz
+    
+    
+#Copy Paste
+
+Link Box, innnen Leer, außen Rand, wenn hover ist innen auch Farbe
+   
+     a.link{
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    a.hover {
+        background-color: #4CAF50
