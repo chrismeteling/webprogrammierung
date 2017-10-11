@@ -1,0 +1,23 @@
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 125px;
+}
+header >div {
+    dispaly:block
+    color: lightblue;
+    margin-top: 0.67em;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.centered {
+    position:relative;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}

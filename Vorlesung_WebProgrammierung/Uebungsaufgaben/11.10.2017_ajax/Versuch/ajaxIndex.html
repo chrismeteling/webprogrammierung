@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function chooseWinner() {
+            document.getElementById("btn").disabled = true;
+            var ajax = new XMLHttpRequest();
+
+            ajax.open("GET", "participants.json", true);
+            ajax.responseType = "json";
+            ajax.addEventListener("load", function () {
+                alert("one");
+                var participants= this.response;
+                alert(this.response.);
+                var winnerIndex= Math.floor(Math.random() * participants.length);
+                alert("two");
+                var winnerFirstName= participants[winnerIndex].firstName;
+                alert("three");
+                var winnerLastName= participants[winnerIndex].lastName;
+                var winnerFullName= winnerFirstName+" "+winnerLastName;
+                document.getElementById("winnerTxt").innerHTML = winnerFullName;
+            });
+            ajax.send();
+        }
+    </script>
+</head>
+<body>
+<h1> Gewinnspiel</h1>
+<button id="btn" onclick="chooseWinner()"> Gewinner ziehen!</button>
+<div>Der Gewinner ist: <span id="winnerTxt"></span></div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* top part C */
+.navbar{
+    top: 10px;
+    width:100%;
+    background-color:white;
+
+}
+.logo{
+    text-align:center;
+    margin:0 auto;
+    width:100%;
+    margin:0 auto;
+    align:center;
+}
+
+.bar{
+    text-align:center;
+    margin:0 auto;
+}
+
+ul#menu{
+    list-style-type: none;
+    margin-top: 25px;
+    padding: 0;
+
+}
+ul#menu li {
+    padding:30px;
+    padding-left:0;
+    display:inline;
+}
+
+li#navelement {
+    font-size:1.2em;
+}
+li#navelement a{
+    color:black;
+}
+li#navelement a:hover{
+    text-decoration: none;
+    border-bottom-style: solid;
+}
+img#longlogo{
+    opacity:0.5;
+}
+
+.demopic{
+    margin-top:35px;
+    margin-bottom:35px;
+}
+.centered {
+    text-align:center;
+}
+
+/*Content Part M*/.blaueboxgroß{
+                      font-size: 24px;
+                      color: white;
+
+                  }
+
+.blaueboxklein{
+    font-size: 12px;
+    color: white;
+}
+
+.hintergrundblau{
+    background-color: rgb(4, 181, 230);
+}
+
+.sucherechts{
+    text-align: right;
+}
+
+.logoschrift{
+    font-size: 10px;
+    color: #999898;
+    width: 200px;
+}
+
+.aktuellenews{
+    font-size: 24px;
+
+}
+
+.lesemehr{
+    font-size: 9px;
+    color: blue;
+}
+
+#rechtssuche{
+    float: left;
+    width: 50%;
+    margin: 0px;
+}
+
+#linkssuche{
+    float: left;
+    width: 50%;
+    margin: 0px;
+}
+
+#eins {
+    float:left;
+    width:30%;
+    margin: 15px;
+}
+
+#zwei {
+    float:left;
+    width:30%;
+    margin: 0px;
+}
+
+#zweia{
+    float: left;
+    width: 40%;
+    margin: 0px;
+}
+
+#zweib{
+    float: left;
+    width: 60%;
+    margin: 0px;
+}
+
+#dreia{
+    float:left;
+    width:33%;
+    margin: 0px;
+}
+
+/*Footer and Header*/
+header {
+    margin-top: -20px;
+    background: mediumslateblue;
+    padding-bottom: 1px;
+}
+#Rufnummer {
+    margin-top:5px;
+    margin-left: 30px;
+    text-align:left;
+    float:left;
+    vertical-align: middle;
+    font-family: Calibri;
+    color:white;
+    font-weight:500;
+    font-size: 1.4em;
+}
+
+#Bilder {
+    text-align:right;
+    margin-right:20px;
+    margin-top:20px;
+    padding-top:5px;
+    }
+
+
+
+img#symbol{
+    margin-right:20px;
+    margin-top:10px;
+}
+footer {
+    bottom:0px;
+    margin-left:20px;
+    color:grey;
+    font-size:1.2em;
+    font-weight:500;
+    background: White;
+}
+
+span#blau{
+    color:darkslateblue;
+    font-weight:700;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
