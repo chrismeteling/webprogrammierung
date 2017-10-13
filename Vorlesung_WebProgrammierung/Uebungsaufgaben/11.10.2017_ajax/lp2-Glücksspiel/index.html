@@ -14,7 +14,7 @@
                 ajax.responseType = "json";
 
                 ajax.addEventListener("load", function () {
-                    var data = ajax.response;
+                    let data = ajax.response;
                     
                     var winnerIndex = Math.floor(Math.random() * data.participants.length);
                     var winnerFirstName = data.participants[winnerIndex].firstName;
@@ -23,8 +23,8 @@
                     var winnerFullName = winnerFirstName + " " + winnerLastName;
                     document.getElementById("winnerTxt").innerHTML = winnerFullName;
                 });
-
                 ajax.send();
+                document.getElementById("btn").disabled = false;
             }
         </script>
     </head>
