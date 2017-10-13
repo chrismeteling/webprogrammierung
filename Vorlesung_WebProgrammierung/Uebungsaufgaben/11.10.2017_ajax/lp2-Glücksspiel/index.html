@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function chooseWinner() {
+                document.getElementById("btn").disabled = true;
+                
+                var ajax = new XMLHttpRequest();
+                ajax.open("GET", "participants.json", true);
+                ajax.responseType = "json";
+
+                ajax.addEventListener("load", function () {
+                    var data = ajax.response;
+                    
+                    var winnerIndex = Math.floor(Math.random() * data.participants.length);
+                    var winnerFirstName = data.participants[winnerIndex].firstName;
+                    var winnerLastName = data.participants[winnerIndex].lastName;
+                    
+                    var winnerFullName = winnerFirstName + " " + winnerLastName;
+                    document.getElementById("winnerTxt").innerHTML = winnerFullName;
+                });
+
+                ajax.send();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Gewinnspiel</h1>
+        <button id="btn" onclick="chooseWinner()">Gewinner ziehen!</button>
+        <div>Der Gewinner ist: <span id="winnerTxt"></span></div>
+    </body>
+</html>

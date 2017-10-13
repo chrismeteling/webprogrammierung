@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beispiel: AJAX-Aufruf mit JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            body {
+                background-image: url(bg.jpg);
+                background-size: 100%;
+                font-family: sans;
+                font-size: 12pt;
+            }
+
+            #panel1 {
+                border: 1px solid black;
+                background-color: #ADD8E6;
+                width: 40em;
+                padding: 0.5em;
+            }
+
+            #panel2 {
+                border: 1px solid black;
+                background-color: #F8F8AD;
+                width: 40em;
+                padding: 0.5em;
+            }
+        </style>
+        
+        <script>
+            function load_content_ajax() {
+                var ajax = new XMLHttpRequest();
+                ajax.open("GET", "new_content.js", true);
+                ajax.responseType = "json";
+                
+                ajax.addEventListener("load", function() {
+                    if (ajax.status !== 200) {
+                        alert("FEHLER " + ajax.status + ": " + ajax.statusText);
+                    } else {
+                        var new_html = "<div id='panel2'><h1>" + ajax.response.title + "</h1>" + ajax.response.content + "</div>";
+                        document.getElementsByTagName("body")[0].innerHTML += new_html;
+                    }
+                });
+                
+                ajax.send();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="panel1">
+            <p>
+                Dies ist der Ursprüngliche Inhalt der Seite. Klicken Sie auf den
+                Button, um neuen Inhalt nachzuladen.
+            </p>
+            <!--
+            <a href="neue_seite.html">Neuen Inhalt anzeigen</a>
+            -->
+            <button onclick="load_content_ajax();">Laden!</button>
+        </div>
+    </body>
+</html>
